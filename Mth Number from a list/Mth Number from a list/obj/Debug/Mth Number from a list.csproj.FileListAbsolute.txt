@@ -1,0 +1,6 @@
+c:\users\vsivanax\documents\visual studio 2013\Projects\Mth Number from a list\Mth Number from a list\bin\Debug\Mth Number from a list.exe.config
+c:\users\vsivanax\documents\visual studio 2013\Projects\Mth Number from a list\Mth Number from a list\bin\Debug\Mth Number from a list.exe
+c:\users\vsivanax\documents\visual studio 2013\Projects\Mth Number from a list\Mth Number from a list\bin\Debug\Mth Number from a list.pdb
+c:\users\vsivanax\documents\visual studio 2013\Projects\Mth Number from a list\Mth Number from a list\obj\Debug\Mth Number from a list.csprojResolveAssemblyReference.cache
+c:\users\vsivanax\documents\visual studio 2013\Projects\Mth Number from a list\Mth Number from a list\obj\Debug\Mth Number from a list.exe
+c:\users\vsivanax\documents\visual studio 2013\Projects\Mth Number from a list\Mth Number from a list\obj\Debug\Mth Number from a list.pdb
