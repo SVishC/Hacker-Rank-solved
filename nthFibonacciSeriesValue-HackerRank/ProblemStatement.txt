@@ -1,0 +1,23 @@
+For this question, you will write a program that generates values from the Fibonacci sequence. The Fibonnaci sequence is recursively defined by:
+
+Fn = Fn - 1 + Fn - 2
+
+Using the following seed values:
+
+F0 = 0, F1 = 1
+
+Given a number n, print the nth value of the Fibonacci sequence.
+
+Examples
+Input:
+
+12
+Output:
+
+144
+Input:
+
+30
+Output:
+
+832040
