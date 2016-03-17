@@ -3,17 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Numerics;
 
 namespace nthFibonacciSeriesValue_HackerRank
 {
     class Program
     {
+      
         static void Main(string[] args)
         {
+            BigInteger FiboPrev = 1;
+            BigInteger FiboPrevPrev = 0;
+            BigInteger FiboSum=0;
             long inp=0;
             string strInp = null;
-            List<long> liInput = new List<long>(); 
-            List<long> liOutput = new List<long>();
+            List<BigInteger> liInput = new List<BigInteger>();
+            List<BigInteger> liOutput = new List<BigInteger>();
             do
             {
                 strInp = Console.ReadLine();
@@ -23,24 +28,28 @@ namespace nthFibonacciSeriesValue_HackerRank
                     liInput.Add(inp);
                 }
             } while (!string.IsNullOrEmpty(strInp));
-            foreach (long num in liInput)
+            foreach (BigInteger n in liInput)
             {
-                liOutput.Add(Fibonacci(num));
+                if (n == 0)
+                    FiboSum = 0;
+                else if (n == 1)
+                    FiboSum = 1;
+                else
+                    for (BigInteger i = 1; i < n; i++)
+                    {
+                        FiboSum = FiboPrev + FiboPrevPrev;
+                        FiboPrevPrev = FiboPrev;
+                        FiboPrev = FiboSum;
+                    }
+                liOutput.Add(FiboSum);
             }
-            foreach (long num in liOutput) {
+            foreach (BigInteger num in liOutput)
+            {
 
                 Console.WriteLine(num);
             }
 
         }
-        public static int Fibonacci(long n) 
-        {
-            if (n == 0)
-                return 0;
-            else if (n == 1)
-                return 1;
-            else
-                return Fibonacci(n - 1) + Fibonacci(n - 2);
-        }
+        
     }
 }
