@@ -12,9 +12,7 @@ namespace nthFibonacciSeriesValue_HackerRank
       
         static void Main(string[] args)
         {
-            BigInteger FiboPrev = 1;
-            BigInteger FiboPrevPrev = 0;
-            BigInteger FiboSum=0;
+            
             long inp=0;
             string strInp = null;
             List<BigInteger> liInput = new List<BigInteger>();
@@ -30,6 +28,9 @@ namespace nthFibonacciSeriesValue_HackerRank
             } while (!string.IsNullOrEmpty(strInp));
             foreach (BigInteger n in liInput)
             {
+                BigInteger FiboPrev = 1;
+                BigInteger FiboPrevPrev = 0;
+                BigInteger FiboSum = 0;
                 if (n == 0)
                     FiboSum = 0;
                 else if (n == 1)
